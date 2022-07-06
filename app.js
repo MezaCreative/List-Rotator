@@ -1,1 +1,30 @@
-console.log("Hello Node");
+
+const categories = ['Salty', 'Sweet', 'Healthy', 'Drinks'];
+const people = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P'];
+
+//Randomized using fisher-yates shuffle
+function randomizer(arr){
+    console.log("original array is " + people);
+    var i = arr.length,
+        j = 0,
+        temp;
+        while (i--) {
+            j = Math.floor(Math.random() * (i+1));
+            //swaps random element with current element
+            temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+        console.log("Final Array is  " + arr);
+    // for ( let i = 0; i<arr1.length ; i++ ) {
+    //     let num1 = Math.floor(Math.random() * (arr1.length) );
+    //     console.log("\n i is " + i + "\n");
+
+    //     console.log("Random num1 is " + num1);
+        // let string1 = 
+    // }
+
+};
+randomizer(people);
+
+// console.log(people);
